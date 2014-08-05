@@ -652,7 +652,7 @@ function createSidePanel() {
         var alive = true;
         var currentState = "NORMAL";
         var difficulty = "MED";
-        var SPEEDRATE = 29;
+        var SPEEDRATE = 25;
         
         function detect(){
             var isDetected = false;
@@ -691,17 +691,23 @@ function createSidePanel() {
                 case 'MED':
                         speed = 2;
                         damage = 2;
-                        this.speedRate = 28;
+                        currentHp = 10;
+                        maxHp = 10;
+                        this.speedRate = 20;
                 break;
                 case 'HARD':  
                         speed = 2;
                         damage = 3
-                        this.speedRate = 32;
+                        maxHp = 14;
+                        currentHp =14;
+                        this.speedRate = 20;
                 break;
                 case 'BOSS':
-                        speed = 1;
+                        speed = 3;
                         damage = 1;
-                        this.speedRate = 15;
+                        maxHp = 16;
+                        currentHp = 16;
+                        this.speedRate = 10;
                 break;
                 default:
                 //easy level already set
