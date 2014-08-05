@@ -638,8 +638,8 @@ function createSidePanel() {
         var sprite = sprite;
         var pos = {x: x, y: y};
         var damage = 1;
-        var currentHp = 6;
-        var maxHp = 6;
+        var currentHp = 10;
+        var maxHp = 10;
         var range = 3;
         var width = SQUARE;
         var height = SQUARE;
@@ -674,7 +674,7 @@ function createSidePanel() {
             alive: true,
             width: width,
             height: height,
-            speedRate : 32,
+            speedRate : 15,
             currentState:currentState,
             difficulty: difficulty,
             init: function(){
@@ -691,23 +691,23 @@ function createSidePanel() {
                 case 'MED':
                         speed = 2;
                         damage = 2;
-                        currentHp = 10;
+                        currentHp = 16;
                         maxHp = 10;
-                        this.speedRate = 20;
+                        this.speedRate = 16;
                 break;
                 case 'HARD':  
                         speed = 2;
                         damage = 3
-                        maxHp = 14;
-                        currentHp =14;
-                        this.speedRate = 20;
+                        maxHp = 20;
+                        currentHp =20;
+                        this.speedRate = 10;
                 break;
                 case 'BOSS':
                         speed = 3;
                         damage = 1;
-                        maxHp = 16;
-                        currentHp = 16;
-                        this.speedRate = 10;
+                        maxHp = 26;
+                        currentHp = 26;
+                        this.speedRate = 5;
                 break;
                 default:
                 //easy level already set
