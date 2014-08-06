@@ -531,16 +531,16 @@ var roomDefiner = (function () {
              var f2_mapArray =  //define a new array for every level
 
                    [['O','O','O','O','O','O','O','X','X','O','O','O','O','O','O'],
-                    ['O','O','O','X','X','X','X','X','X','X','X','O','O','X','O'],
-                    ['O','O','X','X','X','X','X','X','X','X','X','X','X','X','O'],
-                    ['O','X','X','X','X','X','X','X','X','X','X','X','X','X','O'],
-                    ['O','X','X','X','X','X','X','X','X','X','X','X','X','X','O'],
+                    ['O','O','O','G','G','G','G','X','X','G','G','O','O','O','O'],
+                    ['O','O','G','X','X','X','X','X','X','X','G','G','G','G','O'],
+                    ['O','G','G','X','X','X','X','X','X','X','X','X','X','G','O'],
+                    ['O','G','G','X','X','X','X','X','X','X','X','X','X','X','O'],
                     ['O','X','X','X','X','X','X','EM','X','X','X','X','X','X','O'],
                     ['O','X','O','X','X','X','X','X','X','X','X','X','X','X','O'],
                     ['O','O','O','O','X','EM','X','X','X','EM','X','O','O','O','O'],
                     ['O','G','G','O','X','X','X','X','X','X','X','O','G','G','O'],
-                    ['O','G','G','O','X','X','X','R','R','X','X','O','G','G','O'],
-                    ['O','G','X','O','X','X','X','X','X','X','X','O','X','G','O'],
+                    ['O','G','G','X','X','X','X','R','R','X','X','X','G','G','O'],
+                    ['O','G','X','X','X','X','X','X','X','X','X','X','X','G','O'],
                     ['O','EM','X','X','X','X','X','X','X','X','X','X','X','EM','O'],
                     ['O','X','X','X','X','X','X','X','X','X','X','X','X','X','O'],
                     ['O','X','X','X','X','X','X','X','X','X','X','X','X','X','O'],
@@ -580,7 +580,7 @@ var roomDefiner = (function () {
                     ['O','O','X','X','X','X','X','X','X','X','X','X','X','X','O'],
                     ['O','O','O','X','X','X','EE','X','X','X','X','X','G','G','O'],
                     ['O','O','O','X','X','X','X','X','X','X','X','X','G','B','O'],
-                    ['O','O','O','O','O','X','X','X','X','X','O','O','O','O','O']];
+                    ['O','O','O','O','O','X','X','B','X','X','O','O','O','O','O']];
             var caveEntranceBackground = queue.getResult("cave_entrance_background");
             var caveEntranceScreen = game_template.Screen(caveEntranceBackground);
             var caveEntranceRoom = rooms.Room(caveEntranceScreen, CAVE_ENTRANCE_NAME, ce1_mapArray);
