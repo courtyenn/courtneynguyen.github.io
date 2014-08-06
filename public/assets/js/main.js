@@ -262,10 +262,10 @@ function createSidePanel() {
         var sprite = sprite;
         var currentHp = 16;
         var maxHp = 16;
-        var damage = 2;
-        var poweredDamage = 2;
+        var damage = 1;
+        var poweredDamage = 1;
         var range = 1;
-        var name = "";
+        var name = "Bri";
         var currentPowerUps = [];
         var width = SQUARE;
         var height = SQUARE;
