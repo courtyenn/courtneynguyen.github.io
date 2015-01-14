@@ -2,7 +2,7 @@
 #wrapper{
 	position:relative;
 	margin: 0 auto;
-    width:900px;
+
 }
 
 #game{
@@ -10,6 +10,5 @@
 	display:block;
 	position:absolute;
 	z-index:1;
-    width:900px;
 	/*background-size: cover;*/
 }

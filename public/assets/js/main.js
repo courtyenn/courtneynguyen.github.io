@@ -260,12 +260,12 @@ function createSidePanel() {
 
     function Character(sprite, posX, posY){
         var sprite = sprite;
-        var currentHp = 16;
-        var maxHp = 16;
-        var damage = 1;
-        var poweredDamage = 1;
+        var currentHp = 6;
+        var maxHp = 6;
+        var damage = 2;
+        var poweredDamage = 2;
         var range = 1;
-        var name = "Bri";
+        var name = "";
         var currentPowerUps = [];
         var width = SQUARE;
         var height = SQUARE;
@@ -638,8 +638,8 @@ function createSidePanel() {
         var sprite = sprite;
         var pos = {x: x, y: y};
         var damage = 1;
-        var currentHp = 10;
-        var maxHp = 10;
+        var currentHp = 6;
+        var maxHp = 6;
         var range = 3;
         var width = SQUARE;
         var height = SQUARE;
@@ -652,7 +652,7 @@ function createSidePanel() {
         var alive = true;
         var currentState = "NORMAL";
         var difficulty = "MED";
-        var SPEEDRATE = 25;
+        var SPEEDRATE = 29;
         
         function detect(){
             var isDetected = false;
@@ -674,7 +674,7 @@ function createSidePanel() {
             alive: true,
             width: width,
             height: height,
-            speedRate : 15,
+            speedRate : 32,
             currentState:currentState,
             difficulty: difficulty,
             init: function(){
@@ -691,23 +691,17 @@ function createSidePanel() {
                 case 'MED':
                         speed = 2;
                         damage = 2;
-                        currentHp = 16;
-                        maxHp = 10;
-                        this.speedRate = 16;
+                        this.speedRate = 28;
                 break;
                 case 'HARD':  
                         speed = 2;
                         damage = 3
-                        maxHp = 20;
-                        currentHp =20;
-                        this.speedRate = 10;
+                        this.speedRate = 32;
                 break;
                 case 'BOSS':
-                        speed = 3;
+                        speed = 1;
                         damage = 1;
-                        maxHp = 26;
-                        currentHp = 26;
-                        this.speedRate = 5;
+                        this.speedRate = 15;
                 break;
                 default:
                 //easy level already set

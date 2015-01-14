@@ -1,0 +1,15 @@
+
+#wrapper{
+	position:relative;
+	margin: 0 auto;
+    width:900px;
+}
+
+#game{
+	background:rgb(200,200,200);
+	display:block;
+	position:absolute;
+	z-index:1;
+    width:900px;
+	/*background-size: cover;*/
+}
